@@ -9,10 +9,10 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'blog_database',
-      user: process.env.DATABASE_USER || 'MyLord',
+      database: 'bilingual',
+      user: process.env.DATABASE_USER,
       host: 'localhost',
-      port: 5432,
+      port: 5000,
     },
     migrations: {
       directory: './db/migrations',
