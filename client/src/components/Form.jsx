@@ -5,9 +5,9 @@ const Form = () => {
         <>
         <h1>Bilingual Reader</h1>
         <form>
-            <input type = "text" className="language1" />
-            <input type = "text" className="language2" />
-
+            <textarea className="lang1" cols="70" rows="50"></textarea>
+            <textarea className="lang2" cols="70" rows="50"></textarea>
+            <button className = "save" type = "submit">Save</button>
         </form>
         </>
     );
