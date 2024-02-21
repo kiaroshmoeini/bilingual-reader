@@ -1,9 +1,79 @@
-.lang1 {
-    background-color: beige;
-}
-.lang2 {
-    background-color: lightblue;
-}
-.save {
-    background-color: green;
-}
+body {
+    background: #f9f9f9;
+  }
+  .lang1 {
+    background-color: #f9f9f9;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    width: 40%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* external shadow */
+  }
+  .lang2 {
+    background-color: #f9f9f9;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    width: 40%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* external shadow */
+    left: 0;
+  }
+  .save {
+    margin-top: 5%;
+    background-color: #718355;
+    color: #fff;
+  }
+  .save:hover {
+    background: #a1c6ea;
+    color: #000;
+  }
+  
+  .open {
+    margin-top: 5%;
+    background-color: #d9dcd6;
+    margin-right: 10px;
+  }
+  .open:hover {
+    background: #a1c6ea;
+  }
+  
+  .delete {
+    margin-top: 5%;
+    background-color: #d9dcd6;
+    margin-right: 10px;
+  }
+  .delete:hover {
+    background: #a41623;
+    color: #fff;
+  }
+  
+  textarea {
+    border: none;
+    background: transparent;
+    font-family: "Open Sans", sans-serif; /* A modern, legible font */
+    font-size: 1rem;
+    padding: 20px;
+    width: calc(50% - 40px); /* Adjust the width to fit the book cover */
+    height: 90%; /* Adjust the height as needed */
+    z-index: 2;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ced0ce;
+  }
+  
+  .book-container {
+    position: relative;
+    background-color: #bbd1ea;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 5px;
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }

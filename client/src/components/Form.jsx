@@ -25,11 +25,13 @@ const Form = () => {
         <>
         <h1>Bilingual Reader</h1>
         <form onSubmit={onSubmitForm}>
+        <div className="book-container">
             <textarea className="lang1" cols="70" rows="50" value={textLang1} onChange={e =>setTextLang1(e.target.value)}></textarea>
             <textarea className="lang2" cols="70" rows="50" value={textLang2} onChange={e =>setTextLang2(e.target.value)}></textarea>
+        </div>    
+            <button className = "delete" type = "submit">Delete</button>
             <button className = "open" type = "submit">Open</button>
             <button className = "save" type = "submit">Save</button>
-            <button className = "delete" type = "submit">Delete</button>
         </form>
         </>
     );
