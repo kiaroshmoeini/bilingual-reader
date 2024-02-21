@@ -7,12 +7,10 @@ require('dotenv').config({
  */
 module.exports = {
   development: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
       database: 'bilingual',
-      user: process.env.DATABASE_USER,
-      host: 'localhost',
-      port: 5000,
+      user: 'postgres',
     },
     migrations: {
       directory: './db/migrations',
