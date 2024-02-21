@@ -9,8 +9,8 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'bilingual',
-      user: 'postgres',
+      database: process.env.LOCALDB_NAME,
+      user: process.env.LOCALDB_USER,
     },
     migrations: {
       directory: './db/migrations',
@@ -22,6 +22,9 @@ module.exports = {
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL,
+    database: process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     migrations: {
       directory: './db/migrations',
     },
